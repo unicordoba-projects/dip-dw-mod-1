@@ -1,5 +1,4 @@
 # Diplomado en Desarrollo de Aplicaciones Orientadas a la Nube
-___
 
 ## Módulo 1: Diseño Web y Tecnologías Frontend
 
@@ -71,7 +70,23 @@ Ejecutamos el siguiente comando para tomar las plantillas y construir los CSS
     npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch
 ```
 
+INstalar live-server para probar la interfaz gráfica
+
 Puedes probar tu sitio web ejecutando el siguiente comando en la carpeta S0
 ```bash
-    php -S localhost:8000
+    npm install -g live-server
+    live-server
+```
+
+Configurar archivo **package.json**
+```js
+"scripts": {
+    "build": "live-server & npx tailwindcss -i ./src/css/input.css -o ./dist/output.css",
+    "watch": "live-server & npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+```
+
+Ejecutar el script anterior
+```bash
+    npm run watch
 ```

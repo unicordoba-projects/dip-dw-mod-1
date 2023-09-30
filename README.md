@@ -31,9 +31,9 @@
 - Documentación Tailwind CSS, https://tailwindcss.com/docs/installation
 - Cheat Sheet Tailwind CSS, https://tailwindcomponents.com/cheatsheet
 - Documentación de VUE JS, https://vuejs.org/guide/introduction.html
--  
 
-### Sesión 1
+
+### Anotaciones Sesión 1
 ---
 
 Creación de un proyecto Tailwind CSS dentro de una carpeta ya creada.

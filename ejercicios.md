@@ -43,3 +43,11 @@ Engrupos de máximo 4 personas, haga:
 - Vistas para informes. Esta información se debe mostrar por hotel
     - Gráfico con los totales de habitaciones creadas por tipo
     - Gráfico con los totales de acomodaciones creadas por acomodación
+
+## Repositorio
+Enviar por plataforma el link del repositorio del código. Cada commit es un entregable.
+- commit 1: Vistas del hotel (Domingo)
+- commit 2: Vistas de las habitaciones (Martes)
+- commit 3: Vistas de los gráficos (Jueves)
+
+Nota: No olvidar colocar los integrantes del grupo. 

@@ -1,0 +1,12 @@
+.tarjeta-contenedor{
+    flex 
+        bg-blue-200 
+        p-4 
+        m-10 
+        rounded-2xl  
+        border-b-8 
+        border-r-8 
+        border-blue-400 
+        hover:bg-blue-100
+        hover:border-orange-400
+}

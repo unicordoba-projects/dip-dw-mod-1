@@ -1,10 +1,9 @@
-## Diplomado en Desarrollo de Aplicaciones Orientadas a la Web
----
+# Diplomado en Desarrollo de Aplicaciones Orientadas a la Nube
+___
 
-### Módulo 1: Diseño Web y Tecnologías Frontend
+## Módulo 1: Diseño Web y Tecnologías Frontend
 
-###
-#### Temas a trabajar en el módulo
+### Temas a trabajar en el módulo
 
 - Diseño de interfaces con Tailwind CSS
   - Creación del proyecto VUE JS e instalación de dependencias para Tailwind CSS
@@ -60,7 +59,7 @@ Configuramos la ruta de las plantillas editando el archivo **tailwind.config.js*
     }
 ```
 
-Creamos el archivo base CSS en **src/input.css**
+Creamos el archivo base CSS en **src/css/input.css**
 ```css
     @tailwind base;
     @tailwind components;
@@ -69,7 +68,7 @@ Creamos el archivo base CSS en **src/input.css**
 
 Ejecutamos el siguiente comando para tomar las plantillas y construir los CSS
 ```console
-    npx tailwindcss -i ./src/input.css -o ./dist/output.css --watch
+    npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch
 ```
 
 Puedes probar tu sitio web ejecutando el siguiente comando en la carpeta S0

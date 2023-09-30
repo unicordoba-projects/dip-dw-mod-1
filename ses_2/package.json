@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  },
+  "scripts": {
+    "build": "live-server & npx tailwindcss -i ./src/css/input.css -o ./dist/output.css",
+    "watch": "live-server & npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  }
+}

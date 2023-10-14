@@ -33,7 +33,7 @@
 - Documentación de VUE JS, https://vuejs.org/guide/introduction.html
 
 
-### Anotaciones Sesión 1
+## TailwindCSS
 ---
 
 Creación de un proyecto Tailwind CSS dentro de una carpeta ya creada.
@@ -90,3 +90,4 @@ Ejecutar el script anterior
 ```bash
     npm run watch
 ```
+

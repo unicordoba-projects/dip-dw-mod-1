@@ -5,5 +5,8 @@
   "scripts": {
     "build": "live-server & npx tailwindcss -i ./src/css/input.css -o ./dist/output.css",
     "watch": "live-server & npx tailwindcss -i ./src/css/input.css -o ./dist/output.css --watch"
+  },
+  "dependencies": {
+    "chart.js": "^4.4.0"
   }
 }

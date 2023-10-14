@@ -44,10 +44,20 @@ Engrupos de máximo 4 personas, haga:
     - Gráfico con los totales de habitaciones creadas por tipo
     - Gráfico con los totales de acomodaciones creadas por acomodación
 
-## Repositorio
+## Actividades
+
+### Actividad 1
 Enviar por plataforma el link del repositorio del código. Cada commit es un entregable.
 - commit 1: Vistas del hotel (Domingo)
 - commit 2: Vistas de las habitaciones (Martes)
 - commit 3: Vistas de los gráficos (Jueves)
 
 Nota: No olvidar colocar los integrantes del grupo. 
+
+### Actividad 2
+- Crear la aplicación VUE
+- Pasar las vistas HTML a componentes
+- Permitir la navegación a través de router
+- Organizar la estructura del proyecto
+
+

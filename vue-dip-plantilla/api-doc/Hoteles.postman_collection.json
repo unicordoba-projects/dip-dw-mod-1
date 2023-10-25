@@ -1,0 +1,826 @@
+{
+	"info": {
+		"_postman_id": "79932da9-81c6-482c-8b96-b9ea2b469dd8",
+		"name": "Hoteles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28333485",
+		"_collection_link": "https://warped-flare-928197.postman.co/workspace/Proyecto-Agro~6d7d608d-fac9-4899-897c-6c1206546a3f/collection/28333485-79932da9-81c6-482c-8b96-b9ea2b469dd8?action=share&source=collection_link&creator=28333485"
+	},
+	"item": [
+		{
+			"name": "cities",
+			"item": [
+				{
+					"name": "getAll()",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/cities",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"cities"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAll()",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/cities",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"cities"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "[\r\n    {\r\n        \"id\": 1,\r\n        \"name\": \"MONTERIA\"\r\n    },\r\n    {\r\n        \"id\": 2,\r\n        \"name\": \"BOGOTA\"\r\n    },\r\n    {\r\n        \"id\": 3,\r\n        \"name\": \"BARRANQUILLA\"\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"name\": \"MEDELLIN\"\r\n    },\r\n    {\r\n        \"id\": 5,\r\n        \"name\": \"CALI\"\r\n    },\r\n    {\r\n        \"id\": 6,\r\n        \"name\": \"SAN ANDRES\"\r\n    },\r\n    {\r\n        \"id\": 7,\r\n        \"name\": \"CARTAGENA\"\r\n    }\r\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "hotels",
+			"item": [
+				{
+					"name": "get_all",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/hotels",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"hotels"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "getAll()",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"data\": [\r\n        {\r\n            \"id\": 1,\r\n            \"city_id\": 5,\r\n            \"name\": \"HOTEL ALTAMAR\",\r\n            \"nit\": \"011\",\r\n            \"address\": \"VIA AL MAR\",\r\n            \"num_rooms\": 10,\r\n            \"city\": {\r\n                \"id\": 5,\r\n                \"name\": \"CALI\"\r\n            }\r\n        },\r\n        {\r\n            \"id\": 2,\r\n            \"city_id\": 3,\r\n            \"name\": \"HOETL PALMAR\",\r\n            \"nit\": \"45678\",\r\n            \"address\": \"ORILLA DE LA PLAYA\",\r\n            \"num_rooms\": 20,\r\n            \"city\": {\r\n                \"id\": 3,\r\n                \"name\": \"BARRANQUILLA\"\r\n            }\r\n        },\r\n        {\r\n            \"id\": 3,\r\n            \"city_id\": 2,\r\n            \"name\": \"HOTEL MIRAMAR\",\r\n            \"nit\": \"753\",\r\n            \"address\": \"CNETRO\",\r\n            \"num_rooms\": 10,\r\n            \"city\": {\r\n                \"id\": 2,\r\n                \"name\": \"BOGOTA\"\r\n            }\r\n        }\r\n    ],\r\n    \"success\": true\r\n}"
+						}
+					]
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{host}}/hotels/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"hotels",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get_ok",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels/4",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels",
+										"4"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\r\n    \"data\": {\r\n        \"id\": 4,\r\n        \"city_id\": 2,\r\n        \"name\": \"Hotel el Mirador\",\r\n        \"nit\": \"1127222-1\",\r\n        \"address\": \"Avenida central\",\r\n        \"num_rooms\": 10,\r\n        \"city\": {\r\n            \"id\": 2,\r\n            \"name\": \"BOGOTA\"\r\n        }\r\n    },\r\n    \"success\": true\r\n}"
+						}
+					]
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel El Palmar del mar\",\r\n    \"nit\": \"1127222-12\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/hotels",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"hotels"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create_ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Hotel creado satisfactoriamente\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 4,\n        \"city_id\": 2,\n        \"name\": \"Hotel el Mirador\",\n        \"nit\": \"1127222-1\",\n        \"address\": \"Avenida central\",\n        \"num_rooms\": 10,\n        \"city\": {\n            \"id\": 2,\n            \"name\": \"BOGOTA\"\n        }\n    }\n}"
+						},
+						{
+							"name": "create_error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The city id field is required. (and 4 more errors)\",\n    \"errors\": {\n        \"city_id\": [\n            \"The city id field is required.\"\n        ],\n        \"name\": [\n            \"The name field is required.\"\n        ],\n        \"nit\": [\n            \"The nit field is required.\"\n        ],\n        \"address\": [\n            \"The address field is required.\"\n        ],\n        \"num_rooms\": [\n            \"The num rooms field is required.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel El Palmar del mar 2\",\r\n    \"nit\": \"11111111\",\r\n    \"address\": \"Avenida playa bonita\",\r\n    \"num_rooms\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/hotels/2",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"hotels",
+								"2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "put_ok",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels/2",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels",
+										"2"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Hotel actualizado satisfactoriamente!!!\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 2,\n        \"city_id\": 2,\n        \"name\": \"Hotel El Palmar del mar 2\",\n        \"nit\": \"11111111\",\n        \"address\": \"Avenida playa bonita\",\n        \"num_rooms\": 10,\n        \"city\": {\n            \"id\": 2,\n            \"name\": \"BOGOTA\"\n        }\n    }\n}"
+						},
+						{
+							"name": "put_error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"The name has already been taken. (and 1 more error)\",\n    \"errors\": {\n        \"name\": [\n            \"The name has already been taken.\"\n        ],\n        \"nit\": [\n            \"The nit has already been taken.\"\n        ]\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{host}}/hotels/1",
+							"host": [
+								"{{host}}"
+							],
+							"path": [
+								"hotels",
+								"1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete_OK",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": true,\n    \"message\": \"Hotel eliminado satisfactoriamente\",\n    \"errors\": null,\n    \"data\": {\n        \"id\": 1,\n        \"city_id\": 5,\n        \"name\": \"HOTEL ALTAMAR\",\n        \"nit\": \"011\",\n        \"address\": \"VIA AL MAR\",\n        \"num_rooms\": 10,\n        \"city\": {\n            \"id\": 5,\n            \"name\": \"CALI\"\n        }\n    }\n}"
+						},
+						{
+							"name": "delete_ERROR",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [
+									{
+										"key": "Accept",
+										"value": "application/json",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"city_id\": 2,\r\n    \"name\": \"Hotel el Mirador\",\r\n    \"nit\": \"1127222-1\",\r\n    \"address\": \"Avenida central\",\r\n    \"num_rooms\": 10\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://127.0.0.1:8000/api/hotels/1",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"hotels",
+										"1"
+									]
+								}
+							},
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"name": "Content-Type",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"success\": false,\n    \"message\": \"Identificador de hotel no válido\",\n    \"errors\": {\n        \"simple\": \"Identificador de hotel no válido\"\n    }\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "habitaciones",
+			"item": [
+				{
+					"name": "getall",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/show/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"show",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotel_id\": 5,\r\n    \"room_type_id\": 2,\r\n    \"accommodation_id\": 2,\r\n    \"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "put",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotel_id\": 5,\r\n    \"room_type_id\": 2,\r\n    \"accommodation_id\": 2,\r\n    \"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"hotel_id\": 5,\r\n    \"room_type_id\": 2,\r\n    \"accommodation_id\": 2,\r\n    \"quantity\": 2\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "hab_acom",
+			"item": [
+				{
+					"name": "room-types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/room-types",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"room-types"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "accommodation-types",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/rooms/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"rooms",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://127.0.0.1:8000/api",
+			"type": "string"
+		}
+	]
+}
